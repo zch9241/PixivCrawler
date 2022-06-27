@@ -1,0 +1,30 @@
+reason: geturl.get_eachpic_originalurl
+  for num in range(1, int(pagenum_response)):
+
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "C:\Users\x550\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "C:\Users\x550\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "c:\Users\x550\Desktop\pixiv_crawler\main.py", line 40, in threaded_download
+    getpic.getpic().get_main(url = url,cookie = cookie, savepath = savepath)
+  File "c:\Users\x550\Desktop\pixiv_crawler\Web\getpic.py", line 51, in get_main
+    getpic().auto_down(url = url ,filename = rel_path)
+  File "c:\Users\x550\Desktop\pixiv_crawler\Web\getpic.py", line 59, in auto_down
+    request.urlretrieve(url,filename)
+  File "C:\Users\x550\lib\urllib\request.py", line 247, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\x550\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\x550\lib\urllib\request.py", line 531, in open
+    response = meth(req, response)
+  File "C:\Users\x550\lib\urllib\request.py", line 640, in http_response
+    response = self.parent.error(
+  File "C:\Users\x550\lib\urllib\request.py", line 569, in error
+    return self._call_chain(*args)
+  File "C:\Users\x550\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Users\x550\lib\urllib\request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
