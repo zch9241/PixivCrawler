@@ -10,7 +10,10 @@
 # v1.0: 程序首个版本
 # v1.1: 增加下载pixiv限制内容的功能(修改用户headers:请在模块Web.geturl_threads中的geturl类__init__函数中添加你的headers(全部))
 # v2.0-Beta: null
-# v3.0
+# v3.0: 重建所有下载功能，增加进度条显示，增强代码执行效率
+# 
+# 
+
 
 import json
 import os
